@@ -1,0 +1,154 @@
+/*  Portfolio page CSS
+/*----------------------------------------*/
+.portfolio-filter {
+	list-style: none;
+}
+
+.portfolio-filter li {
+	display: inline-block;
+	margin-right: 40px;
+	font-size: 14px;
+	color: #222;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.portfolio-filter li.active {
+	text-decoration: underline;
+	-webkit-text-decoration-color: black;
+	        text-decoration-color: black;
+}
+
+.portfolio-warp {
+	display: block;
+	overflow: hidden;
+}
+
+.portfolio-warp .grid-item {
+	width: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio-warp .grid-item:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.portfolio-warp .grid-item.grid-wide,
+.portfolio-warp .grid-item.grid-long {
+	width: 40%;
+}
+
+.portfolio-warp .grid-item a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: rgba(221, 102, 34, 0.45);
+	opacity: 0;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.portfolio-warp .grid-item a:after {
+	position: absolute;
+	content: "+";
+	left: 50%;
+	top: 60%;
+	width: 48px;
+	margin-left: -24px;
+	margin-top: -24px;
+	color: #fff;
+	font-size: 48px;
+	line-height: 48px;
+	text-align: center;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-warp .grid-item:hover a {
+	opacity: 1;
+}
+
+.portfolio-warp .grid-item:hover a:after {
+	top: 50%;
+}
+
+.portfolio-warp .grid-sizer {
+	width: 20%;
+}
+
+<!-- Page section start -->
+<div class="page-section spad">
+    <div class="container">
+        <!-- portfolio filter menu -->
+        <ul class="portfolio-filter">
+            <li class="filter" data-filter="*">Alle</li>
+            <li class="filter" data-filter=".bolig">Boliger</li>
+            <li class="filter" data-filter=".hytter">Hytter</li>
+            <li class="filter" data-filter=".kultur">Kultur</li>
+            <li class="filter" data-filter=".idrett">Idrett</li>
+            <li class="filter" data-filter=".forretningsbygg">Forretningsbygg</li>
+        </ul>
+    </div>
+    <!-- portfolio items -->
+    <div class="container-fluid">
+    <div class="portfolio-warp spad">
+        <div id="portfolio">
+            <div class="grid-sizer"></div>
+            <!-- portfolio item -->
+            <div class="grid-item set-bg grid-wide bolig" data-setbg="bilder/bolig1.jpg"><a class="img-popup" href="bilder/bolig1.jpg"></a></div>
+            <!-- portfolio item -->
+            <div class="grid-item set-bg grid-wide bolig" data-setbg="bilder/bolig2.jpg"><a class="img-popup" href="bilder/bolig2.jpg"></a></div>
+            <!-- portfolio item -->
+            <div class="grid-item set-bg grid-wide bolig" data-setbg="bilder/bolig3.jpg"><a class="img-popup" href="bilder/bolig3.jpg"></a></div>
+            <!-- portfolio item -->
+            <div class="grid-item set-bg grid-wide bolig" data-setbg="bilder/bolig7.jpg"><a class="img-popup" href="bilder/bolig7.jpg"></a></div>
+            <!-- portfolio item -->
+            <div class="grid-item set-bg grid-wide hytter" data-setbg="bilder/hytte1.jpg"><a class="img-popup" href="bilder/hytte1.jpg"></a></div>
+            <!-- portfolio item -->
+            <div class="grid-item set-bg grid-wide hytter" data-setbg="bilder/hytte2.jpg"><a class="img-popup" href="bilder/hytte2.jpg"></a></div>
+            <!-- portfolio item -->
+            <div class="grid-item set-bg grid-wide hytter" data-setbg="bilder/hytte3.jpg"><a class="img-popup" href="bilder/hytte3.jpg"></a></div>
+            <!-- portfolio item -->
+            <div class="grid-item set-bg grid-wide kultur" data-setbg="bilder/kultur1.png"><a class="img-popup" href="bilder/kultur1.png"></a></div>
+            <!-- portfolio item -->
+            <div class="grid-item set-bg grid-wide kultur" data-setbg="bilder/kultur2.jpg"><a class="img-popup" href="bilder/kultur2.jpg"></a></div>
+            <!-- portfolio item -->
+            <div class="grid-item set-bg grid-wide idrett" data-setbg="bilder/fotball.jpg"><a class="img-popup" href="bilder/fotball.jpg"></a></div>
+            <!-- portfolio item -->
+            <div class="grid-item set-bg grid-wide idrett" data-setbg="bilder/fotball1.jpg"><a class="img-popup" href="bilder/fotball1.jpg"></a></div>
+            <!-- portfolio item -->
+            <div class="grid-item set-bg grid-wide idrett" data-setbg="bilder/fotball2.jpg"><a class="img-popup" href="bilder/fotball2.jpg"></a></div>
+            <!-- portfolio item -->
+            <div class="grid-item set-bg grid-wide idrett" data-setbg="bilder/fotball6.jpg"><a class="img-popup" href="bilder/fotball6.jpg"></a></div>
+            <!-- portfolio item -->
+            <div class="grid-item set-bg grid-wide forretningsbygg" data-setbg="bilder/forretning.jpg"><a class="img-popup" href="bilder/forretning.jpg"></a></div>
+            <!-- portfolio item -->
+            <div class="grid-item set-bg grid-wide forretningsbygg" data-setbg="bilder/forretning1.jpg"><a class="img-popup" href="bilder/forretning1.jpg"></a></div>
+            <!-- portfolio item -->
+            
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container" id="myDiv1">
+        <div class="section-title mb100">
+                <h1>Februar 2019</h1>
+            </div>
+    <div class="row">
+        <div class="col-md-4">
+            <p class="pabout"></p>
+
+
+        </div>
+
+
+
+    </div>
+</div>
